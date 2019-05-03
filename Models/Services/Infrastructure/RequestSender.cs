@@ -75,7 +75,7 @@ namespace OptionDependentHttpclientFactory.Models.Services.Infrastructure
 
         private void DisposeValue(object key, object value, EvictionReason reason, object state)
         {
-            logger.LogInformation($"Disposed ${value?.GetType().Name} for key '{key}' after eviction for reason: '{reason}'");
+            logger.LogInformation($"Disposed {value?.GetType().Name} for key '{key}' after eviction for reason: '{reason}'");
             (value as IDisposable)?.Dispose();
         }
 
