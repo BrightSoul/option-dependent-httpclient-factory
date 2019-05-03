@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<form method="post">
+    <label>Invia una richiesta GET al seguente URL:</label>
+    <input type="text" name="url" value="@ViewBag.Url">
+    <button>Invia!</button>
+</form>
+<div>
+    @ViewBag.Message
+</div>
